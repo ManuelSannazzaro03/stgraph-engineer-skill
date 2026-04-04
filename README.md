@@ -52,6 +52,3 @@ La skill fa riferimento a file di regole interni al progetto STGraph:
 
 Per il funzionamento completo, Claude Code deve essere aperto nella cartella del progetto STGraph dove questi file sono presenti. Senza di essi la skill funziona comunque, ma usa solo la conoscenza interna.
 
----
-
-Creata con [Claude Code](https://claude.ai/code)
