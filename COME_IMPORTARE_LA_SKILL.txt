@@ -1,0 +1,82 @@
+COME IMPORTARE LA SKILL "stgraph-engineer" IN UN ALTRO ACCOUNT CLAUDE CODE
+============================================================================
+
+Questa skill permette a Claude Code di comportarsi da specialista STGraph/STEL.
+Il file SKILL.md che trovi nella stessa cartella di questo file e' la skill da importare.
+
+
+PREREQUISITI
+------------
+- Claude Code installato (CLI o desktop app)
+- Accesso alla cartella home dell'utente destinatario
+
+
+PASSAGGI PER L'IMPORTAZIONE
+----------------------------
+
+1. APRI IL TERMINALE
+   Sul Mac: Spotlight (Cmd+Space) -> "Terminale" -> Invio
+
+2. CREA LE CARTELLE NECESSARIE
+   Copia e incolla questo comando nel terminale:
+
+       mkdir -p ~/.claude/skills/stgraph-engineer
+
+   Premi Invio. Questo crea la struttura di cartelle dove Claude Code
+   cerca le skill personalizzate.
+
+3. COPIA IL FILE SKILL.MD
+   Trascina il file SKILL.md sul Desktop del nuovo computer, oppure
+   copialo via AirDrop / USB. Poi esegui nel terminale:
+
+       cp ~/Desktop/SKILL.md ~/.claude/skills/stgraph-engineer/SKILL.md
+
+   (Se il file SKILL.md si trova in un altro percorso, modifica il comando
+    sostituendo ~/Desktop/SKILL.md con il percorso corretto.)
+
+4. VERIFICA CHE IL FILE SIA AL POSTO GIUSTO
+   Esegui:
+
+       cat ~/.claude/skills/stgraph-engineer/SKILL.md
+
+   Se vedi il contenuto della skill, l'importazione e' riuscita.
+
+5. RIAVVIA CLAUDE CODE
+   Chiudi completamente Claude Code e riaprilo. La skill viene caricata
+   all'avvio.
+
+6. VERIFICA CHE LA SKILL SIA ATTIVA
+   Apri una nuova conversazione in Claude Code e scrivi:
+
+       /stgraph-engineer
+
+   Se Claude risponde come specialista STGraph, la skill funziona correttamente.
+
+
+NOTA IMPORTANTE - FILE DI REGOLE
+----------------------------------
+Questa skill fa riferimento a dei file di regole interni al progetto:
+  - rules/STGRAPH_MASTER_RULES.md
+  - rules/STGRAPH_REVIEW_CHECKLIST.md
+  - rules/COMMON_STGRAPH_ERRORS.md
+  - rules/STGRAPH_SOURCE_CODE_MAP.md
+  - CLAUDE.md
+
+Questi file si trovano nella cartella del progetto STGraph. Affinche' la skill
+funzioni al 100%, Claude Code deve essere aperto nella cartella del progetto
+(dove sono presenti queste regole), oppure i file devono essere copiati
+nel nuovo ambiente di lavoro.
+
+Se non hai il progetto completo, la skill funziona comunque ma usera'
+solo la conoscenza interna, senza poter leggere le regole aggiornate.
+
+
+STRUTTURA RIASSUNTIVA
+----------------------
+~/.claude/
+  skills/
+    stgraph-engineer/
+      SKILL.md   <-- questo e' l'unico file necessario
+
+
+Creato il 04/04/2026
