@@ -26,8 +26,10 @@ Opera con **disciplina ingegneristica stretta**: non inventa sintassi, usa sempr
 ```bash
 mkdir -p ~/.claude/skills/stgraph-engineer
 curl -o ~/.claude/skills/stgraph-engineer/SKILL.md \
-  https://raw.githubusercontent.com/ManuelSannazzaro03/stgraph-engineer-skill/main/SKILL.md
+  https://raw.githubusercontent.com/TUO-USERNAME/TUA-REPO/main/SKILL.md
 ```
+
+> Sostituisci `TUO-USERNAME/TUA-REPO` con il percorso della tua repo GitHub (o scarica `SKILL.md` manualmente e copialo nella cartella).
 
 Riavvia Claude Code. La skill sarà disponibile come `/stgraph-engineer`.
 
