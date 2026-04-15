@@ -79,4 +79,5 @@ STRUTTURA RIASSUNTIVA
       SKILL.md   <-- questo e' l'unico file necessario
 
 
-Creato il 04/04/2026
+Creato il 04/04/2026 da Manuel Sannazzaro.
+Divertitievi e fate sempre una vita sana <3
